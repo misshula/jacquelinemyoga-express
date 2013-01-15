@@ -1,13 +1,17 @@
 {
   "name": "jacquelinemyoga",
-  "version": "0.0.1",
+  "version": "0.0.1-3",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "node ./app.js"
   },
   "dependencies": {
     "express": "3.0.6",
     "ejs": "*",
     "stylus": "*"
+  },
+  "subdomain": "jacquelinem",
+  "engines": {
+    "node": "0.8.x"
   }
 }
