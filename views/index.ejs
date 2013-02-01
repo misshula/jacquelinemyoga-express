@@ -3,9 +3,35 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+  	<!-- Third-Party Libraries (Order matters) -->
+    <script data-main="/app/config" src="/assets/js/libs/require.js"></script>
+  	<!-- 
+    <script src="/assets/js/libs/backstretch.js"></script>
+ -->
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div id="home"></div>
+    <div id="contact"></div>
+
+    <div id="header">
+      <div id="header_padding">
+        <a href="#about" id="nav_about">about</a>
+        <a href="#contact" id="nav_contact">contact</a>
+        <a href="#schedule" id="nav_schedule">schedule</a>
+        <a href="#heart" id="nav_heart">heart</a>
+      </div>
+    </div>
+
+    
+
+
+
+
+    <div id="footer">
+        <div id="footer_links">
+          <a href="#" id="nav_about">linkedin</a>
+          <a href="#" id="nav_contact">twitter</a>
+          <a href="#" id="nav_schedule">facebook</a>
+        </div>
   </body>
 </html>

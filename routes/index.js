@@ -1,10 +1,15 @@
 
-/*
- * GET home page.
- */
 
-exports.index = function(req, res){
-  res.render('index', { 
-  	title: 'jacquelinemyoga' 
-  });
+
+var index = {
+	get : function( req, res){
+		res.render('index', { title: 'jacquelinemyoga' });
+	}
+}
+
+module.exports.enable = function( app ){
+  app.get('/', index.get );
+
+
+
 };

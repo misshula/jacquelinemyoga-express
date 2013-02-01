@@ -1,0 +1,42 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'jistu', '-g' ]
+2 info using npm@1.1.69
+3 info using node@v0.8.16
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'jistu', null ]
+7 silly cache add name=undefined spec="jistu" args=["jistu",null]
+8 verbose parsed url { pathname: 'jistu', path: 'jistu', href: 'jistu' }
+9 silly lockFile c9910c36-jistu jistu
+10 verbose lock jistu /Users/Misshula/.npm/c9910c36-jistu.lock
+11 silly lockFile c9910c36-jistu jistu
+12 verbose addNamed [ 'jistu', '' ]
+13 verbose addNamed [ null, '' ]
+14 silly lockFile 07946e56-jistu jistu@
+15 verbose lock jistu@ /Users/Misshula/.npm/07946e56-jistu.lock
+16 silly addNameRange { name: 'jistu', range: '', hasData: false }
+17 verbose url raw jistu
+18 verbose url resolving [ 'https://registry.npmjs.org/', './jistu' ]
+19 verbose url resolved https://registry.npmjs.org/jistu
+20 info trying registry request attempt 1 at 12:43:35
+21 http GET https://registry.npmjs.org/jistu
+22 http 404 https://registry.npmjs.org/jistu
+23 silly registry.get cb [ 404,
+23 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+23 silly registry.get     date: 'Fri, 01 Feb 2013 17:41:51 GMT',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'content-length': '52',
+23 silly registry.get     'cache-control': 'must-revalidate' } ]
+24 silly lockFile 07946e56-jistu jistu@
+25 error 404 'jistu' is not in the npm registry.
+25 error 404 You should bug the author to publish it
+25 error 404
+25 error 404 Note that you can also install from a
+25 error 404 tarball, folder, or http url, or git url.
+26 error System Darwin 11.4.2
+27 error command "node" "/usr/local/bin/npm" "install" "jistu" "-g"
+28 error cwd /Users/Misshula/Sites/nodejitsu/jacquelinemyoga-express
+29 error node -v v0.8.16
+30 error npm -v 1.1.69
+31 error code E404
+32 verbose exit [ 1, true ]
