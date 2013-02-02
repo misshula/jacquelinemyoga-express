@@ -1,10 +1,11 @@
 define([
 	'app',
-	'views/index'
+	'views/index',
+	'models/index'
 
 ],
 
-function(app, IndexView){
+function(app, IndexView, IndexModel){
 
 	 return Backbone.Router.extend({
 		
@@ -13,7 +14,9 @@ function(app, IndexView){
  		},
 
 		index : function(){
-			var index = new IndexView();
+			var indexModel = new IndexModel();
+
+			var index = new IndexView({model : indexModel});
 			index.render();
 		},
 	});

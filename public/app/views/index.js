@@ -4,8 +4,6 @@ define([
 
 function(app){
 
-	console.log(app)
-
 	var IndexView = Backbone.View.extend({
 		events : {
 			'click #nav_about' : 'about',
@@ -16,30 +14,40 @@ function(app){
 		el : 'body',
 
 		about : function(){
-			console.log('about clicked!')
-			$.backstretch('/images/IMG_4222.jpg');
+			$('.module').hide();
+			$('#about').fadeIn(1500);
 		},
 
 		contact : function(){
-			console.log('contact!')
-			$.backstretch('/images/IMG_4239.jpg');
+			$('.module').hide();
+			$('#contact').fadeIn(1500);
+			this.model.save({
+				success : function(){
+					console.log('yes')
+				}
+			});
 		},
 
 		schedule : function(){
-			console.log('schedule!')
-			$.backstretch('/images/IMG_4239_1.jpg');
+			$('.module').hide();
+			$('#schedule').fadeIn(1500);
 		},
 
 		heart : function(){
-			console.log('heart@!!')
-			$.backstretch('/images/IMG_4254.jpg');
+			$('.module').hide();
+			$('#heart').fadeIn(1500);
 		},
 
 		render : function(){
 
+			$('#home').show()
 			
 			///$.backstretch('/images/IMG_4383.jpg');
 			$('#home').backstretch('/images/IMG_4383.jpg');
+			$('#about').backstretch('/images/IMG_4222.jpg');
+			$('#contact').backstretch('/images/IMG_4239.jpg');
+			$('#schedule').backstretch('/images/IMG_4239_1.jpg');
+			$('#heart').backstretch('/images/IMG_4254.jpg');
 			
 			
 			//return this.$el.html(this.template());
