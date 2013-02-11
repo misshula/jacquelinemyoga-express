@@ -42,9 +42,8 @@ function(app){
 
 			$('#home').show()
 			
-			///$.backstretch('/images/IMG_4383.jpg');
-			$('#home').backstretch('/images/IMG_4383.jpg');
-			$('#about').backstretch('/images/IMG_4222.jpg');
+			$('#home').backstretch('/images/IMG_4222.jpg');
+			$('#about').backstretch('/images/IMG_4383.jpg');
 			$('#contact').backstretch('/images/IMG_4239.jpg');
 			$('#schedule').backstretch('/images/IMG_4239_1.jpg');
 			$('#heart').backstretch('/images/IMG_4254.jpg');
