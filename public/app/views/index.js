@@ -52,9 +52,9 @@ function(app){
 			
 			$('#home').backstretch('/images/IMG_4222.jpg');
 			$('#about').backstretch('/images/IMG_4383.jpg');
-			$('#contact').backstretch('/images/IMG_4239.jpg');
-			$('#schedule').backstretch('/images/IMG_4239_1.jpg');
-			$('#heart').backstretch('/images/IMG_4254.jpg');
+			$('#contact').backstretch('/images/IMG_4239_1.jpg');
+			$('#schedule').backstretch('/images/IMG_4310wide.jpg');
+			$('#heart').backstretch('/images/IMG_4251.jpg');
 			
 			
 			//return this.$el.html(this.template());
