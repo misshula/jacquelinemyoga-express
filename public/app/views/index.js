@@ -18,11 +18,15 @@ function(app){
 			$('.module').fadeOut(1500);
 			$('#home').fadeIn(1500);
 			$('#homemodal').fadeIn(1500);
+			$('.nav').removeClass('selected');
+			
 		},
 
 		about : function(){
 			$('.module').fadeOut(1500);
 			$('#about').fadeIn(1500);
+			$('.nav').removeClass('selected');
+			$('#nav_about').addClass('selected');
 		},
 
 		contact : function(){
@@ -33,16 +37,22 @@ function(app){
 					console.log('yes')
 				}
 			});
+			$('.nav').removeClass('selected');
+			$('#nav_contact').addClass('selected');
 		},
 
 		schedule : function(){
 			$('.module').fadeOut(1500);
 			$('#schedule').fadeIn(1500);
+			$('.nav').removeClass('selected');
+			$('#nav_schedule').addClass('selected');
 		},
 
 		heart : function(){
 			$('.module').fadeOut(1500);
 			$('#heart').fadeIn(1500);
+			$('.nav').removeClass('selected');
+			$('#nav_heart').addClass('selected');
 		},
 
 		render : function(){
